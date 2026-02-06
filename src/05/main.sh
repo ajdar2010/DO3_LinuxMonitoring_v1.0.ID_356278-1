@@ -17,9 +17,9 @@ source "$SRC_DIR/utils.sh"
 TARGET=$1
 validate_input "$TARGET"
 
-echo "--- Directory Analysis for: $TARGET ---"
-get_general_stats "$TARGET"
+get_general_stats1 "$TARGET"
 get_top_folders "$TARGET"
+get_general_stats2 "$TARGET"
 get_file_types "$TARGET"
 echo ""
 get_top_files "$TARGET"
